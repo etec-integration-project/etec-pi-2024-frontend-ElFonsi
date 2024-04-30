@@ -1,0 +1,236 @@
+/*
+https://colorhunt.co/palette/e3fdfdcbf1f5a6e3e971c9ce
+*/
+
+  
+  .nav_main {
+    font-family: 'Oswald', sans-serif; 
+    background-color: #71C9CE;
+    padding-right: 10px;
+    display: flex;
+    font-size:0.5cm;
+    width: 100%;
+    /*1920*//*1376*/
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid #77bfc5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000000000000;
+  }
+  
+  
+  #Logo {
+    width: 70px;
+  }
+  
+  #title{
+    margin-left: 6px;
+    text-shadow: rgb(138, 118, 118) 1px 1px 2px;
+  }
+  
+  #Tienda_title{
+    display: flex;
+    align-items: center;
+  }
+  
+  #buscar{
+    display: flex;
+    height: 32px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  #logo_buscar{
+    width: 32px;
+    margin-right: 1px;
+  }
+  
+  .navegador{
+    display: flex;
+    align-items: center;
+    width: 10;
+  }
+  
+  .div_logo_titulo{
+    display: flex;
+    align-items: center;
+    margin: 1rem 1rem 1rem 1rem    ;
+  }
+  
+  .div_logo_tienda{
+    display: flex;
+    margin: 1rem;
+  }
+  
+  
+  .ul_nav_2{
+    display: flex;
+    list-style-type: none;
+    margin: 1rem    ;
+  }
+  
+  .ul_nav{
+    display: flex;
+    list-style-type: none;
+    margin: 1rem    ;
+    
+  }
+  
+  .links_footer:hover, .links:hover ,.div_img_menu:hover{
+    transform: translateY(2px);
+  }
+  
+  .links_img{
+    box-shadow: none;
+  }
+  
+  .li_nav{
+    margin: 1rem;
+    text-shadow: rgb(138, 118, 118) 1px 1px 3px;
+    /*transform: translateY(-5px);*/
+  }
+  
+  .links{
+    text-decoration: none;
+    color: black;
+  }
+  
+  #img_principal{
+    margin-top: 80px;
+    width: 100%;
+    height: 400px;
+    border-bottom: 4px solid #3795BD;
+  }
+  
+  #Tienda{
+    width: 40px;
+    margin-right: 4px;
+    
+  }
+  
+  #PC_armadas{
+    display: flex;
+    margin-bottom: 4px;
+  }
+  
+  .Links_PCs{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    border: 3px solid rgb(56, 47, 9);
+    margin: 10px 40px 10px 40px;
+    background: linear-gradient(to right, #3795BD, #77bfc5);
+    border-radius: 10px;
+    box-shadow: black 2px 2px 5px;
+  }
+  
+  .l_p{
+    font-family: 'Teko', sans-serif;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    font-weight: bolder;    
+  }
+  
+  .img_pcs{
+    margin: 3px 10px 1px 1px;
+    width: 75px;
+  }
+  .Links_PCs:hover, #Logo:hover, #Tienda:hover, .Agregar:hover{
+    transition: 200ms;
+    transform:scale(1.05)
+  }
+  
+  #section_menu{
+    display: flex;
+    width: 100%;   
+    
+  }
+  
+  #barra_categorias{
+    display: flex;
+    background-color: #71C9CE;
+    width: 270px;
+    height: 100vb;
+    display:inline-block;
+  }
+  
+  #titulo_menu{
+  
+    margin-left: 3px;
+    color: black;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+  
+  }
+  
+  .div_img_menu{
+    display: flex;
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+    padding: 4px;
+    background-color:#71C9CE;
+    border-radius: 8px;
+    box-shadow: black 2px 2px 7px;
+    border: 1px solid #464646;
+  }
+  
+  .Agregar{
+    margin: auto;
+    width: 120px;
+    height: 33px;
+    background: linear-gradient(to right, #43b1e0, #77bfc5);
+    border-radius: 10px;
+  }
+  
+  .agregar_producto{
+    text-decoration: none;
+    color: black;
+    font-weight:lighter ;
+  }
+  
+  .descripcion_prod{
+    font-size: 12px;
+    width: 100%;
+    height: 50px;
+  }
+  
+  #Imagen_menu{
+    display: flex;
+    width: 140px;
+    height: 140px;
+    margin: auto;
+    margin-top: 2px;
+  }
+  
+  .imgs_menu{
+    width: 180px;
+  }
+  
+  .links_menu{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin: 4px;
+  }
+  
+  #Content{
+    margin: 10px 0px 0px 10px;
+    font-size: 24px;
+    width: 100%;
+    height: 100vb;
+  }
+  
+  #categorias_main{
+    margin-top: 80px;
+  }
+  
+  
