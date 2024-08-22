@@ -26,3 +26,13 @@ Lo que se me ocurrio fue que para cada archivo .jsx hay un archivo css con su re
 
 ![image](https://github.com/user-attachments/assets/986d26d3-70cf-4295-a75f-b705aaa3c1c5)
 En esta imagen se muestra el como quedo el resultado de los estilos organizados.
+
+----------------------------------------------------------SPRINT 6 DOCUMENTACIÓN-----------------------------------------
+En este sprint decidi realizar una remodelacion a la pagina principal, ya que el estilo de esta se encontraba en un estado deplorable.
+
+Para lograr esto no solo cambie los colores de la pagina, sino que tambien decidi optar con un diseño basado en grid que logre adaptar el estilo a diferentes resoluciones y 
+tamaños.
+
+Adjunto imagenes de la nueva pagina.
+
+![image](https://github.com/user-attachments/assets/6892f3cc-e727-4591-a556-604d805ad21c)
