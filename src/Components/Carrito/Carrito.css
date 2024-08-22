@@ -1,0 +1,137 @@
+#section_body{
+    display: flex;
+    width: 100%;
+    height: 37vmax;
+    align-items: center;
+    justify-content: center;
+}
+
+#cart_titulo{
+    display: flex;
+    margin: 5px 0px 0px 10px;
+}
+
+.carrito{
+    margin-top: 100px;
+    background-color: #71C9CE;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 180vh;
+
+}
+
+.objetos_carrito{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 5px;
+    padding: 4px;
+    background-color:#71C9CE;
+    border-radius: 8px;
+    box-shadow: black 2px 2px 7px;
+    border: 1px solid #464646;
+}
+
+._producto{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0px 5px 0px 5px;
+    width: 35px;
+    height: 30px;
+    background: linear-gradient(to right, #43b1e0, #77bfc5);
+    border-radius: 10px;
+  }
+
+#eliminar{
+    display: flex;
+    justify-content: center;
+    margin: 0px 10px 0px 10px;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to right, #43b1e0, #77bfc5);
+    border-radius: 1000px;
+}
+
+#clasificacion{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;  
+    margin: 5px 0px 0px 10px;
+}
+
+.clas{
+    display: flex;
+    width: 100%;
+    width: 29.3vh;
+    justify-content: center;
+    
+}
+
+#nombre_prod{
+    width: 100%;
+    width: 29.3vh;
+}
+
+#price{
+    width: 100%;
+    width: 29.3vh;
+}
+
+#price_total{
+    width: 80px;
+    padding:5px;
+    background-color: #A6E3E9;
+    border-radius: 3px;
+}
+
+.botonCant{
+    background-color:#71C9CE;
+    border: #71C9CE;
+    
+}
+
+#botonElim{
+    background-color:#71C9CE;
+    border: #71C9CE;
+}
+
+#imgs_menu{
+    width: 100%;
+    width: 29.3vh;
+}
+#ct{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    width: 29.3vh;
+}
+#Subtotal{
+    width: 100%;
+    width: 29.3vh;
+    margin-right: 12.2vh;
+}
+
+.imgs_carrito{
+    width: 120px;
+}
+
+#cont_carrito{
+    display: flex;
+    justify-content: center;
+}
+
+#enviar{
+    margin-left: 800px;
+    width: 120px;
+    height: 30px;
+    background: linear-gradient(to right, #43b1e0, #77bfc5);
+    border-radius: 10px;
+}
+#enviar:hover{
+    transition: 200ms;
+    transform:scale(1.05)
+}

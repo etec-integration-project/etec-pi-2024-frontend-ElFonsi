@@ -1,0 +1,80 @@
+.nav_main {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Oswald', sans-serif;
+  background-color: #2C93F2;
+  padding: 0 10px;
+  font-size: clamp(0.5rem, 2vw, 1.2rem);
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000000000000;
+}
+
+.div_logo_titulo {
+  display: flex;
+  align-items: center;
+}
+
+#Logo {
+  width: clamp(50px, 7vw, 70px);
+}
+
+#title {
+  margin-left: 6px;
+  text-shadow: #1F77D0 1px 1px 2px;
+  color: #000000;
+}
+
+.div_links {
+  display: flex;
+  align-items: center;
+}
+
+.ul_nav, .ul_nav_2 {
+  display: flex;
+  list-style-type: none;
+  margin: 1rem;
+}
+
+.li_nav {
+  margin: 1rem;
+  text-shadow: #1F77D0 1px 1px 3px;
+}
+
+.links {
+  text-decoration: none;
+  color: #000000;
+}
+
+.links_img {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navegador {
+  display: flex;
+  align-items: center;
+}
+
+#buscar {
+  display: flex;
+  height: 32px;
+  width: clamp(30vh, 40vw, 60vh);
+  border-radius: 5px;
+  border: 1px solid #2C93F2;
+}
+
+#logo_buscar {
+  width: clamp(20px, 3vw, 32px);
+  margin-right: 1px;
+}
+
+.links:hover, .links_img:hover, .li_nav:hover, #Logo:hover, #Tienda:hover {
+  transform: translateY(2px);
+  transition: 200ms;
+}

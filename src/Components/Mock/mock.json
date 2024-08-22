@@ -1,0 +1,15 @@
+[
+    
+    {
+        "id":1,
+        "nombre_producto":"Tarjeta de video",
+        "precio_producto":200,
+        "count":0
+    },
+    {
+        "id":2,
+        "nombre_producto":"Memoria RAM",
+        "precio_producto":100,
+        "count":0
+    }
+]
