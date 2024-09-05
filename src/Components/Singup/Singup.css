@@ -1,7 +1,7 @@
 
 .signup-container {
     margin-top: 80px;
-    background-color: #71C9CE;
+    background-color: #2C93F2;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
@@ -22,17 +22,17 @@ input[type="email"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
-    background-color: #A6E3E9;
+    background-color: #ffffff;
     border-radius: 3px;
 }
 .boton {
-    background-color: #3795BD;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000000;
     padding: 10px 10px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
 }
 .boton:hover {
-    background-color: #3284a7;
+    background-color: #dfdfdf;
 }
