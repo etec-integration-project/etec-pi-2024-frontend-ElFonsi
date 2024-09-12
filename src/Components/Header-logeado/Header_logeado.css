@@ -1,3 +1,5 @@
+
+
 .nav_main {
   display: flex;
   flex-direction: row;
@@ -34,6 +36,12 @@
   display: flex;
   align-items: center;
 }
+
+.div_logo_tienda{
+  display: flex;
+  align-items: center;
+}
+
 
 .ul_nav, .ul_nav_2 {
   display: flex;

@@ -51,7 +51,7 @@ const Headerlogeado = () => {
 
                 <div class="div_links">
                     <ul class="ul_nav">
-                        <Link to="/" class="links" target=""><img id="cerrar_sesion" src={xcircle} alt=""/></Link>
+                        <Link to="/" class="links" target=""></Link>
                     </ul>
                 </div>
 
