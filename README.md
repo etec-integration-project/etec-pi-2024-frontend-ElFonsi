@@ -1,4 +1,4 @@
--------------------------TUTORIAL PARA INICIAR EL PROYECTO------ALFONSO MAGALLANES------------------
+-------------------------TUTORIAL PARA INICIAR EL PROYECTO------ALFONSO MAGALLANES------------
 
 1_ Clonaremos el proyecto de git hub con el siguiente commando
 
