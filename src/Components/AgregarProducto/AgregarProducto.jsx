@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './AgregarProducto.css';
-import {config} from "dotenv"
-config()
+// import {config} from "dotenv";
+// config()
 
 function AgregarProducto() {
-    const host = process.env.MYSQLDB_HOST
+    // const host = process.env.MYSQLDB_HOST
   const [nombre, setNombre] = useState('');
   const [descripcion, setDescripcion] = useState('');
   const [precio, setPrecio] = useState('');
@@ -20,7 +20,7 @@ function AgregarProducto() {
     };
 
     try {
-      await axios.post(`http://${host}:8080/nuevoProducto`, producto);
+      await axios.post(`http://localhost:8080/nuevoProducto`, producto);
       alert('Producto agregado exitosamente');
       setNombre('');
       setDescripcion('');
