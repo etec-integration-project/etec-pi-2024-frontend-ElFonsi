@@ -8,18 +8,6 @@ import axios from 'axios'
 
 function Carrito({carrito, eliminarDelCarrito, incrementarCant, decrementarCant, calcularSubtotal, calcularSubtotalTotal, vaciarCarrito}) {
 
-  // const handleComprar = async () => {
-  //   try {
-  //     const response = await axios.post('http://localhost:8080/comprar', { productos: carrito });
-  //     const resumenCompra = response.data.resumenCompra;
-  //     onCompraExitosa(resumenCompra);
-  //   } catch (error) {
-  //     console.error('Error al comprar productos:', error);
-  //   }
-  // } 
-
-
-
 const CarroFiltrado = Object.values(carrito).map(({ id, nombre, cantidad, precio }) => ({ id, nombre, cantidad, precio }));
   
   const cartJson = JSON.stringify(CarroFiltrado);
@@ -51,7 +39,7 @@ const CarroFiltrado = Object.values(carrito).map(({ id, nombre, cantidad, precio
                 <div id="clasificacion"> 
                 <h4 className="clas">Imagen</h4><h4 className="clas">Nombre</h4><h4 className="clas">Precio</h4><h4 className="clas">Cantidad</h4><h4 className="clas">Subtotal</h4><h4 className="clas">Eiminar</h4>
                 </div>
-
+                <div className="carrito-dropdown">
                 {carrito.map((producto, index) => (
                 <div className="objetos_carrito" key={index}>
                     <div id='imgs_menu'><img className="imgs_carrito" src={laptop} alt=""/></div>
@@ -61,12 +49,13 @@ const CarroFiltrado = Object.values(carrito).map(({ id, nombre, cantidad, precio
                     <button className="botonCant" onClick={()=> incrementarCant(producto.id)}><div className="_producto"><img src={plus} alt=""/></div></button> 
                     <h5 id="price_total">{producto.cantidad}</h5> 
                     <button className="botonCant" onClick={()=> decrementarCant(producto.id)}><div className="_producto"><img src={minus} alt=""/></div></button>
-                    </div>
-                    <div id="Subtotal">${calcularSubtotal(producto).toFixed(2)}</div>
+                </div>
+                  <div id="Subtotal">${calcularSubtotal(producto).toFixed(2)}</div>
                     <button id="botonElim" onClick={() => eliminarDelCarrito(producto)}><div id="eliminar"><img src={xcircle} alt=""/></div></button>
 
-                </div>
+                  </div>
                 ))}
+                </div>
                 <br />
               <form id="cont_carrito">
 

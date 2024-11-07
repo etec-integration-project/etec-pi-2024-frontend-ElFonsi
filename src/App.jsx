@@ -11,6 +11,7 @@ import Carrito from './Components/Carrito/Carrito'
 // import Resumen from './Components/resumen/resumen.jsx'
 import Headerlogeado from './Components/Header-logeado/Header-logeado'
 import Categoriaslogeado from './Components/Categorias-logeado/Categorias-logeado'
+import AgregarProducto from './Components/AgregarProducto/AgregarProducto.jsx';
 
 
 function App() {
@@ -98,6 +99,13 @@ return carrito.reduce((total, producto)=> total + calcularSubtotal(producto), 0)
                 <Header/>
                 <Categorias/>
                 <Footer/>
+              </>}
+              />
+
+              <Route path='/nuevoProducto' element={<>
+                <Headerlogeado/>
+                <AgregarProducto/>
+                
               </>}
               />
 

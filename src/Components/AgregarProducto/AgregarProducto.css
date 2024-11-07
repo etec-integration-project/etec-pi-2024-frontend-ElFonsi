@@ -1,0 +1,59 @@
+#section_body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.formulario_producto {
+    background-color: #2C93F2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+#form_titulo {
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: black;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #464646;
+    box-shadow: black 2px 2px 7px;
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+#enviarproducto {
+    width: 100%;
+    padding: 10px;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 200ms;
+    margin-top: 15px; /* Añadir espacio en la parte superior */
+}
+
+#enviarproducto:hover {
+    transform: scale(1.05);
+}
