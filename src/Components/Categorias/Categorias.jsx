@@ -3,13 +3,17 @@ import './Categorias.css';
 import laptop from '../multimedia/laptop.svg';
 import airplay from '../multimedia/airplay.svg';
 import axios from 'axios';
+import {config} from "dotenv"
+config()
+
 
 function Categorias() {
     const [data, setData] = useState([]);
+    const host = process.env.MYSQLDB_HOST
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/productos');
+                const response = await axios.get(`http://${host}:8080/productos`);
                 setData(response.data);
             } catch (error) {
                 console.error('Error:', error);
