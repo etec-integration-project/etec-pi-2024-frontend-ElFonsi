@@ -5,14 +5,14 @@ import minus from '../multimedia/minus.svg'
 import plus from '../multimedia/plus.svg'
 import xcircle from '../multimedia/xcircle.svg'
 import axios from 'axios'
-// import {config} from "dotenv"
-// config()
+import {config} from "dotenv"
+config()
 function Carrito({carrito, eliminarDelCarrito, incrementarCant, decrementarCant, calcularSubtotal, calcularSubtotalTotal, vaciarCarrito}) {
 
 const CarroFiltrado = Object.values(carrito).map(({ id, nombre, cantidad, precio }) => ({ id, nombre, cantidad, precio }));
   
   const cartJson = JSON.stringify(CarroFiltrado);
-  // const host = process.env.MYSQLDB_HOST
+  const host = process.env.MYSQLDB_HOST;
   
 
   const handleCarrito = async () => {
@@ -21,7 +21,7 @@ const CarroFiltrado = Object.values(carrito).map(({ id, nombre, cantidad, precio
 
       if (cartJson !== "[]") {
           try {
-              await axios.post(`http://localhost:8080/comprar`, {cartJson, userId});
+              await axios.post(`http://${host}:8080/comprar`, {cartJson, userId});
               window.alert('Articulos comprados exitosamente');
               vaciarCarrito()
           } catch (err) {

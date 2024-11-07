@@ -5,7 +5,7 @@ import './AgregarProducto.css';
 // config()
 
 function AgregarProducto() {
-    // const host = process.env.MYSQLDB_HOST
+    // const host = process.env.MYSQLDB_HOST;
   const [nombre, setNombre] = useState('');
   const [descripcion, setDescripcion] = useState('');
   const [precio, setPrecio] = useState('');

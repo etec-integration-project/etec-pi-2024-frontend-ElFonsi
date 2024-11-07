@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './Login.css'
 import { useNavigate } from 'react-router-dom';
-// import {config} from "dotenv";
-// config()
+import {config} from "dotenv"
+config()
 
 const Login = () => {
-  // const host = process.env.MYSQLDB_HOST
+  const host = process.env.MYSQLDB_HOST
     const navegar = useNavigate();
     const [usuario, setUsuario] = useState({
         email: '',
@@ -16,7 +16,7 @@ const Login = () => {
       const handleLogin = async (e) => {
         e.preventDefault();
         try {
-          const response = await axios.post(`http://localhost:8080/login`, usuario);
+          const response = await axios.post(`http://${host}:8080/login`, usuario);
           localStorage.setItem('userId', response.data.userId)
           console.log(response.data); 
           alert('Has iniciado sesion')
