@@ -17,7 +17,7 @@ const Singin = () => {
 
     const handleRegister = async () => {
       try {
-        const response = await axios.post('http://localhost:8080/registrarse', usuario);
+        const response = await axios.post("http://192.168.42.89:8080/registrarse", usuario);
         localStorage.setItem('userId', response.data.userId);
         console.log(response.data);
         window.alert('Usuario registrado correctamente')

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './Categorias-logeado.css'
 import laptop from '../multimedia/laptop.svg'
 import airplay from '../multimedia/airplay.svg'
-// import mock from '../Mock/mock.json';
 import axios from 'axios'
 
 
@@ -11,7 +10,7 @@ function Categoriaslogeado({ agregarAlCarrito }) {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('http://localhost:8080/productos');
+                const response = await axios.get("http://localhost:8080/productos");
                 setData(response.data);
             } catch (error) {
                 console.error('Error:', error);
