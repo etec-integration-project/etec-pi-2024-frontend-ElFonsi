@@ -16,7 +16,7 @@ const Header = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get("http://localhost:8080/productos");
+                const response = await axios.get(`${process.env.REACT_APP_BACKEND}/productos`);
                 setData(response.data);
             } catch (error) {
                 console.error('Error:', error);

@@ -17,7 +17,7 @@ function AgregarProducto() {
     };
 
     try {
-      await axios.post("http://localhost:8080/nuevoProducto", producto);
+      await axios.post(`${process.env.REACT_APP_BACKEND}/nuevoProducto`, producto);
       alert('Producto agregado exitosamente');
       setNombre('');
       setDescripcion('');
