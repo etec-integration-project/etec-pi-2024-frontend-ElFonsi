@@ -17,7 +17,7 @@ const Singin = () => {
 
     const handleRegister = async () => {
       try {
-        const response = await axios.post(`${process.env.REACT_APP_BACKEND}/registrarse`, usuario);
+        const response = await axios.post(`${process.env.REACT_APP_BACKEND}/api/registrarse`, usuario);
         localStorage.setItem('userId', response.data.userId);
         console.log(response.data);
         window.alert('Usuario registrado correctamente')
