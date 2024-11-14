@@ -19,7 +19,7 @@ const CarroFiltrado = Object.values(carrito).map(({ id, nombre, cantidad, precio
 
       if (cartJson !== "[]") {
           try {
-              await axios.post(`${process.env.REACT_APP_BACKEND}/comprar`, {cartJson, userId});
+              await axios.post(`${process.env.REACT_APP_BACKEND}/api/comprar`, {cartJson, userId});
               window.alert('Articulos comprados exitosamente');
               vaciarCarrito()
           } catch (err) {

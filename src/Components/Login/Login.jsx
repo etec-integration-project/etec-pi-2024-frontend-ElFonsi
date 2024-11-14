@@ -13,7 +13,7 @@ const Login = () => {
       const handleLogin = async (e) => {
         e.preventDefault();
         try {
-          const response = await axios.post(`${process.env.REACT_APP_BACKEND}/login`, usuario);
+          const response = await axios.post(`${process.env.REACT_APP_BACKEND}/api/login`, usuario);
           localStorage.setItem('userId', response.data.userId)
           console.log(response.data); 
           alert('Has iniciado sesion')
