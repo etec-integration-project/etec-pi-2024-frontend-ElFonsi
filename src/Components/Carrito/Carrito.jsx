@@ -22,20 +22,26 @@ function Carrito({
 
   const handleCarrito = async () => {
     const userId = localStorage.getItem("userId");
-
+  
+    if (!userId) {
+      alert("Usuario no identificado");
+      return;
+    }
+  
     if (cartJson !== "[]") {
       try {
         await axios.post(`${process.env.REACT_APP_BACKEND}/api/comprar`, { cartJson, userId });
         window.alert("Artículos comprados exitosamente");
         vaciarCarrito();
       } catch (err) {
+        console.error("Error al registrar carrito: ", err);
         alert("Error al realizar la compra");
-        console.log("Error al registrar carrito: ", err);
       }
     } else {
       alert("Seleccionar artículos");
     }
   };
+  
 
   // Cargar las compras realizadas
   useEffect(() => {
