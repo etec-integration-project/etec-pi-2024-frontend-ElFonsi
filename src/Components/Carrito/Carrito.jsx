@@ -47,18 +47,24 @@ function Carrito({
   useEffect(() => {
     const fetchCompras = async () => {
       const userId = localStorage.getItem("userId");
-
+  
+      if (!userId) {
+        console.error("Usuario no identificado: no se encontró userId en localStorage.");
+        return;
+      }
+  
       try {
         const response = await axios.get(`${process.env.REACT_APP_BACKEND}/api/productos/usuario/${userId}`);
         setComprasRealizadas(response.data);
-        console.log(response.data)
+        console.log("Compras realizadas:", response.data);
       } catch (error) {
         console.error("Error al cargar las compras realizadas:", error);
       }
     };
-
+  
     fetchCompras();
   }, []);
+  
 
   return (
     <section id="section_body">
